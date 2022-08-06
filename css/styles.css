@@ -468,6 +468,11 @@ p.languages {
     text-align: center;
 }
 
+.bold {
+    font-style: normal;
+    font-weight: bold;
+}
+
 
 /*Media Queries*/
 
