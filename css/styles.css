@@ -1,0 +1,619 @@
+:root {
+    --color-green: lightgreen;
+    --color-blue: #92c9e8;
+    --color-red: #f35353;
+    --color-gray: lightgray;
+    --color-projects-blue: rgba(48, 48, 232, 0.46);
+    --color-courses-green: #20de20;
+    --color-footer-gray: gray;
+    --color-background-color: #f5ead6;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100%;
+    width: 100vw;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+*, *::before, *::after {
+    padding: 0px;
+    margin: 0px;
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+}
+
+#cover-page-holder {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    /*border: 2px solid black;*/
+    min-height: 796px;
+}
+
+#welcome-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    /*border: 1px solid black;*/
+    min-height: 796px;
+    overflow: hidden;
+    background-color: yellow;
+}
+
+#cover-page-content-holder {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow: hidden;
+    /*border: 1px solid red;*/
+}
+
+#cover-page-content {
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 75ch;
+    height: max-content;
+    padding-right: 8px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    width: 99%;
+    text-align: center;
+    position:sticky;
+    top: 0;
+}
+
+#cover-page-text {
+    display: block;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 10px;
+    top: 60px;
+    position: sticky;
+    width: 99%;
+    /*border: 3px solid red;*/
+}
+
+#cover-page-heading, #cover-page-text {
+    margin: 12px 12px 12px 12px;
+    display: block;
+}
+
+#cover-page-text {
+    margin-bottom: 50px;
+}
+
+
+/*#white-bar {*/
+/*    width: 100%;*/
+/*    height: 10vh;*/
+/*    position: relative;*/
+/*    top: 400px;*/
+/*    background: linear-gradient(*/
+/*    rgba(255,255,255,0),*/
+/*    rgba(255,255,255,1) 8vh*/
+/*    );*/
+/*    !*border: 1px solid black;*!*/
+/*}*/
+
+body {
+    padding: 0px;
+    width: 100vw;
+    z-index: 3;
+    background-color: var(--color-background-color);
+}
+
+#navbar {
+    /*height: 102px;*/
+    height: max-content;
+    width: 100vw;
+    z-index:3;
+    overflow: hidden;
+    margin: auto;
+    padding: 0px 0px 30px 0px;
+    font-family: 'Source Code Pro', monospace;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(
+    var(--color-background-color),
+    var(--color-background-color) 80%,
+    rgba(255,255,255,0)
+    );
+}
+
+#nav-resume, #nav-about, #nav-projects {
+    position: relative;
+    /*border: 1px solid black;*/
+    height: 1rem;
+    width: 100vw;
+    top: -120px;
+}
+
+main {
+    z-index: 1;
+    background-color: var(--color-background-color);
+}
+
+#navigation-menu {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 18px 20px 18px 20px;
+    width: 80vw;
+    margin: 10px auto 10px auto;
+    border-radius: 10px;
+}
+
+nav > ul > li > a:visited, nav > ul > li > a {
+    text-decoration: none;
+    color:black;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    width: 10ch;
+    text-align: center;
+    /*margin: auto;*/
+    border-radius: 10px;
+    font-size: 1.4rem;
+}
+
+#navAbout {
+    background-color: var(--color-red);
+}
+
+#navResume {
+    background-color: var(--color-green);
+}
+
+#navProjects {
+    background-color: var(--color-blue);
+}
+
+#contact {
+    background-color: var(--color-footer-gray);
+}
+
+li:active {
+    transform: scale(0.95);
+    box-shadow: none;
+    transition: box-shadow 100ms ease;
+}
+
+.nav-point {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2rem;
+    text-align: center;
+}
+
+section {
+    padding: 10px 10px 10px 10px;
+    z-index: 1;
+}
+
+.section-paragraph {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5rem;
+    padding: 0 20%;
+}
+
+.external-link:visited {
+    text-decoration: none;
+}
+
+.external-link {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.external-link:hover {
+    color: rgba(3, 3, 58, 0.45);
+}
+
+.external-link:active {
+    color: darkblue;
+    transform: scale(0.97);
+}
+
+#about {
+    background-color: #f35353;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+#Resume {
+    font-family: 'Source Code Pro', monospace;
+    background-color: var(--color-green);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#courseSection {
+    display: flex;
+    /*border: 1px solid black;*/
+    margin-left: 2ch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4ch;
+    justify-content: center;
+}
+
+.resumeLanguages {
+    height: 6ch;
+    /*border: 1px solid black;*/
+    width: max-content;
+    padding: 2ch;
+    margin: auto;
+}
+
+span {
+    /*border: 1px solid black;*/
+    margin: 1ch;
+    padding: 1ch;
+    width: 20ch;
+    border-radius: 10px;
+    background-color: var(--color-courses-green);
+}
+
+.coursesGridBox {
+    padding: 2ch 3ch 2ch 1ch;
+    align-items: center;
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    height: max-content;
+    width: max-content;
+    background-color: var(--color-courses-green);
+    transition: transform 500ms ease, box-shadow 500ms ease;
+}
+
+.coursesGridBox:active {
+    box-shadow: 0 0 5px 1px var(--color-courses-green);
+    transform: scale(1.05);
+    transition: transform 500ms ease, box-shadow 500ms ease, z-index 500ms ease;
+}
+
+.certifications {
+    text-decoration: none;
+    transition: color 100ms ease;
+}
+
+.certifications:active {
+    transform: scale(0.98);
+    transition: transform 100ms ease;
+}
+
+.absoluteWithinCourseBox {
+    display: block;
+    margin-top: 4ch;
+    text-align: center;
+}
+
+
+#projects {
+    background-color: var(--color-blue);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.projects-flexbox {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-title-holder {
+    display: flex;
+    height: 30ch;
+    width: 30ch;
+    border-radius: 10px;
+    margin: 7ch 2ch 0ch 2ch;
+    padding: 2ch;
+    background-color: rgba(48, 48, 232, 0.46);
+    transition: transform 500ms ease, box-shadow 500ms ease;
+}
+
+
+.project-title-holder:active {
+    transform: scale(0.99);
+    box-shadow: none;
+    transition: transform 100ms ease, box-shadow 100ms ease;
+}
+
+.project-tile {
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    margin: auto;
+    line-height: 3ch;
+    font-size: 1.5rem;
+    color: black;
+}
+
+footer {
+    background-color: gray;
+    height: max-content;
+    width: 100vw;
+    font-family: 'Source Code Pro', monospace;
+    padding: 20px 20px 30px 20px;
+}
+
+footer > #Contact > h2 {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    transition: transform 500ms ease;
+}
+
+.socialIcon {
+    font-size: 1.5rem;
+    color: black;
+    border-right: 20px;
+    transition: transform 100ms ease;
+}
+
+.socialIcon:active {
+    transform: scale(0.95);
+}
+
+h3 {
+    font-size: 1.7rem;
+    padding-left: 1ch;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.5rem;
+    padding-left: 2ch;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.4rem;
+    padding-left: 3ch;
+}
+
+.location {
+    font-size: 1.4rem;
+    padding-left: 2ch;
+}
+
+.course-name,.grade {
+    font-size: 1.3rem;
+    padding-left: 3ch;
+}
+
+#languages {
+    display: block;
+}
+
+.languages {
+    display: inline-block;
+    padding-left: 2ch;
+}
+
+p.languages {
+    font-size: 1.4rem;
+
+}
+.space3 {
+    height: 15px;
+}
+
+.space1 {
+    height: 5px;
+}
+
+.space2 {
+    height: 3ch;
+}
+
+.space4 {
+    height: 55px;
+}
+
+.space5 {
+    height: 75px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1120px){
+    #welcome-section {
+        background-position: center;
+        transition: background-position ease 1000ms;
+    }
+}
+
+@media only screen and (max-width: 796px) {
+    #nav-resume, #nav-about, #nav-projects {
+        top: -160px;
+    }
+}
+
+@media only screen and (max-width:808px) {
+    #cover-page-content {
+        width: 85%;
+    }
+
+    #cover-page-text {
+        padding-left: 0px;
+        top:110px;
+    }
+}
+
+@media only screen and (max-width:585px) {
+    #cover-page-content {
+        width: 100%;
+    }
+
+    #cover-page-text {
+        font-size: 1.3rem;
+    }
+
+    #cover-page-heading {
+        font-size: 2.4rem;
+    }
+
+    .section-paragraph {
+        padding: 2rem 10%;
+    }
+
+    #courseSection {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .coursesGridBox {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .languages {
+        padding-left: 1ch;
+    }
+
+    h4 {
+        padding-left: 1ch;
+        padding-right: 1ch;
+    }
+
+    #navigation-menu {
+        width: 100vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .project-tile {
+        line-height: 2ch;
+    }
+
+    .project-title-holder {
+        height: 20ch;
+        padding: 1ch;
+        margin: 5ch 2ch 0ch 2ch;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (hover: hover) {
+
+    #navigation-menu {
+        transition: transform 500ms ease, justify-content 500ms ease;
+    }
+
+    #navigation-menu:hover {
+        transform: scale(1.15);
+        transition: transform 500ms ease, width 500ms ease;
+    }
+
+    li {
+        transition: transform 100ms ease, box-shadow 100ms ease;
+    }
+
+    li:hover {
+        transform: scale(1.2);
+        transition: transform 100ms ease, box-shadow 100ms ease;
+        box-shadow: 0 0 5px 1px gray;
+    }
+
+    .external-link:hover {
+        color: rgba(3, 3, 58, 0.45);
+    }
+
+    .coursesGridBox:hover {
+        box-shadow: 0 0 5px 1px var(--color-courses-green);
+        transform: scale(1.05);
+        transition: transform 500ms ease, box-shadow 500ms ease, z-index 500ms ease;
+    }
+
+    .certifications:hover, .certifications:focus {
+        color: white;
+        transition: color 100ms ease;
+    }
+
+    .project-title-holder:hover, .project-title-holder:focus {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px 1px rgba(48, 48, 232, 0.46);
+        transition: transform 500ms ease, box-shadow 500ms ease;
+    }
+
+    .social-icons:hover {
+        transform: scale(1.15);
+        transition: transform 500ms ease;
+    }
+
+    .socialIcon:hover {
+        transform: scale(1.2);
+        transition: transform 100ms ease;
+    }
+
+}
+
+
+
+
+
+
+
+
