@@ -273,18 +273,21 @@ section {
 }
 
 .resumeLanguages {
-    height: 6ch;
+    height: max-content;
     /*border: 1px solid black;*/
     width: max-content;
     padding: 2ch;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-span {
-    /*border: 1px solid black;*/
+.LanguageList {
     margin: 1ch;
     padding: 1ch;
-    width: 20ch;
+    width: max-content;
     border-radius: 10px;
     background-color: var(--color-courses-green);
 }
@@ -426,7 +429,9 @@ h5 {
 }
 
 #languages {
-    display: block;
+    display: flex;
+    /*border: 1px solid black;*/
+    height: max-content;
 }
 
 .languages {
