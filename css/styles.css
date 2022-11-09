@@ -65,7 +65,7 @@ html::-webkit-scrollbar {
 }
 
 #cover-page-content {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -76,11 +76,12 @@ html::-webkit-scrollbar {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 5rem;
     width: 99%;
     text-align: center;
     position:sticky;
     top: 0;
+    font-family: 'Bungee Shade', cursive;
 }
 
 #cover-page-text {
@@ -132,7 +133,7 @@ body {
     overflow: hidden;
     margin: auto;
     padding: 0px 0px 30px 0px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Orbitron', sans-serif;
     position: sticky;
     top: 0;
     background: linear-gradient(
@@ -213,8 +214,8 @@ li:active {
 }
 
 h2 {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 2rem;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -224,8 +225,8 @@ section {
 }
 
 .section-paragraph {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1.5rem;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 2rem;
     padding: 0 20%;
 }
 
@@ -255,7 +256,7 @@ section {
 }
 
 #Resume {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Sue Ellen Francisco', cursive;
     background-color: var(--color-green);
     margin: 1rem;
     padding: 1rem;
@@ -282,13 +283,14 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: 2rem;
 }
 
 .LanguageList {
     margin: 1ch;
     padding: 1ch;
     width: max-content;
-    border-radius: 10px;
+    border-radius: 50%;
     background-color: var(--color-courses-green);
 }
 
@@ -402,29 +404,29 @@ footer > #Contact > h2 {
 }
 
 h3 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     padding-left: 1ch;
     text-align: center;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-left: 2ch;
     text-align: center;
 }
 
 h5 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     padding-left: 3ch;
 }
 
 .location {
-    font-size: 1.4rem;
+    font-size: 2rem;
     padding-left: 2ch;
 }
 
 .course-name,.grade {
-    font-size: 1.3rem;
+    font-size: 2rem;
     padding-left: 3ch;
 }
 
@@ -440,7 +442,7 @@ h5 {
 }
 
 p.languages {
-    font-size: 1.4rem;
+    font-size: 2rem;
 
 }
 .space3 {
@@ -476,6 +478,10 @@ p.languages {
 .bold {
     font-style: normal;
     font-weight: bold;
+}
+
+p {
+    font-size: 2rem;
 }
 
 
